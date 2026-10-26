@@ -24,6 +24,7 @@ fragment = "1.9.1"
 hiddenapibypass = "6.1"
 shizuku = "13.1.5"
 dadb = "2.0.0"
+adbKt = "1.0.0"
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
@@ -47,6 +48,7 @@ shizuku-api = { module = "dev.rikka.shizuku:api", version.ref = "shizuku" }
 shizuku-provider = { module = "dev.rikka.shizuku:provider", version.ref = "shizuku" }
 hiddenapibypass = { module = "org.lsposed.hiddenapibypass:hiddenapibypass", version.ref = "hiddenapibypass" }
 dadb = { module = "dev.mobile:dadb", version.ref = "dadb" }
+adb-kt = { module = "com.github.rhythmcache:adb-kt", version.ref = "adbKt" }
 
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerialization" }

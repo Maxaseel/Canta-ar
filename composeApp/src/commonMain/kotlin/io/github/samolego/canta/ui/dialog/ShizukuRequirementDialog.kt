@@ -35,8 +35,8 @@ import io.github.samolego.canta.generated.resources.grant_shizuku_permission_to_
 import io.github.samolego.canta.generated.resources.install_shizuku
 import io.github.samolego.canta.generated.resources.start_shizuku_service
 import io.github.samolego.canta.generated.resources.take_action
-import io.github.samolego.canta.generated.resources.shizuku_required
-import io.github.samolego.canta.generated.resources.shizuku_requirement_description
+import io.github.samolego.canta.generated.resources.privilege_method_title
+import io.github.samolego.canta.generated.resources.privilege_method_description
 import io.github.samolego.canta.ui.component.CantaDialog
 import io.github.samolego.canta.ui.component.WIDE_DIALOG_WIDTH
 import io.github.samolego.canta.ui.theme.GreenOk
@@ -70,6 +70,7 @@ internal fun ShizukuRequirementDialogContent(
     handler: CantaHandler,
     platform: CantaPlatform,
     usbRequirementRow: @Composable () -> Unit = {},
+    wirelessAdbContent: @Composable () -> Unit = {},
 ) {
     // Re-read on resume: the user fixes these steps in the Shizuku app and comes back.
     var status by remember { mutableStateOf(handler.privilegeStatus) }
@@ -82,14 +83,14 @@ internal fun ShizukuRequirementDialogContent(
 
     CantaDialog(
         onDismissRequest = { onClose(false) },
-        title = stringResource(Res.string.shizuku_required),
+        title = stringResource(Res.string.privilege_method_title),
         widthFraction = WIDE_DIALOG_WIDTH,
         buttons = {
             TextButton(onClick = { onClose(false) }) { Text(stringResource(Res.string.close)) }
         },
     ) {
         Text(
-            text = stringResource(Res.string.shizuku_requirement_description),
+            text = stringResource(Res.string.privilege_method_description),
             style = MaterialTheme.typography.bodyMedium,
             color = MaterialTheme.colorScheme.onSurfaceVariant,
             modifier = Modifier.padding(bottom = 24.dp)
@@ -112,6 +113,7 @@ internal fun ShizukuRequirementDialogContent(
                 onActionClick = { onClose(true) },
             )
         }
+        wirelessAdbContent()
     }
 }
 

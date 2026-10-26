@@ -141,6 +141,16 @@
     <string
         name="shizuku_requirement_description"
     >Canta uses Shizuku to uninstall apps without requiring root access. Shizuku provides a secure way to access system-level SDKs.</string>
+    <string name="privilege_method_title">Choose an access method</string>
+    <string name="privilege_method_description">Canta needs an ADB shell-level service to manage apps. Start Shizuku and grant access, or pair with this device using Wireless debugging below. Neither method requires root; Wireless debugging requires Android 11 or newer.</string>
+    <string name="wireless_adb_title">Or connect with Wireless debugging</string>
+    <string name="wireless_adb_description">On this device, open Developer options → Wireless debugging → Pair device with pairing code. Enter the displayed IP address, pairing port and code, then the separate Wireless debugging port. Keep both devices on the same Wi-Fi network.</string>
+    <string name="wireless_adb_host">Device IP address</string>
+    <string name="wireless_adb_pairing_port">Pairing port</string>
+    <string name="wireless_adb_pairing_code">6-digit pairing code</string>
+    <string name="wireless_adb_connect_port">Wireless debugging port</string>
+    <string name="wireless_adb_connect">Pair and connect</string>
+    <string name="wireless_adb_connecting">Connecting…</string>
     <string name="commits_url">Commits URL</string>
     <string
         name="commits_url_description"

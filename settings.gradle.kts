@@ -24,6 +24,9 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven("https://jitpack.io") {
+            content { includeGroup("com.github.rhythmcache") }
+        }
         // Binaryen (wasm-opt) distribution used by the Kotlin Wasm plugin.
         // Mirrors the plugin's own Ivy layout (see BinaryenSetupTask in
         // kotlin-gradle-plugin sources): artifacts like

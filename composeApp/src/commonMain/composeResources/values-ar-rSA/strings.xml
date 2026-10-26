@@ -124,6 +124,16 @@
     <string name="grant_shizuku_permission_to_canta">منح الإذن لـ Canta في Shizuku</string>
     <string name="shizuku_required">Shizuku مطلوب</string>
     <string name="shizuku_requirement_description">يستخدم Canta برنامج Shizuku لإلغاء تثبيت التطبيقات دون الحاجة إلى صلاحيات الجذر. يوفر Shizuku طريقة آمنة للوصول إلى حزم تطوير البرامج (SDKs) على مستوى النظام.</string>
+    <string name="privilege_method_title">اختر طريقة الوصول</string>
+    <string name="privilege_method_description">يحتاج Canta إلى خدمة ADB بصلاحيات shell لإدارة التطبيقات. شغّل Shizuku وامنحه الإذن، أو أقرن هذا الجهاز باستخدام التصحيح اللاسلكي أدناه. لا تتطلب أي من الطريقتين صلاحيات الجذر؛ ويتطلب التصحيح اللاسلكي Android 11 أو أحدث.</string>
+    <string name="wireless_adb_title">أو اتصل عبر التصحيح اللاسلكي</string>
+    <string name="wireless_adb_description">على هذا الجهاز، افتح خيارات المطوّر ← التصحيح اللاسلكي ← إقران جهاز باستخدام رمز. أدخل عنوان IP والمنفذ ورمز الاقتران الظاهر، ثم منفذ التصحيح اللاسلكي المنفصل. تأكد من اتصال الجهازين بشبكة Wi‑Fi نفسها.</string>
+    <string name="wireless_adb_host">عنوان IP للجهاز</string>
+    <string name="wireless_adb_pairing_port">منفذ الاقتران</string>
+    <string name="wireless_adb_pairing_code">رمز الاقتران المكوّن من 6 أرقام</string>
+    <string name="wireless_adb_connect_port">منفذ التصحيح اللاسلكي</string>
+    <string name="wireless_adb_connect">إقران واتصال</string>
+    <string name="wireless_adb_connecting">جارٍ الاتصال…</string>
     <string name="commits_url">رابط الإيداعات</string>
     <string name="commits_url_description">أين يمكن الحصول على معلومات الإداع للحصول على التحديثات من</string>
     <string name="advanced_settings">الإعدادات المتقدمة</string>
